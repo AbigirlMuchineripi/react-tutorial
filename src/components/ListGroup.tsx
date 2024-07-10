@@ -1,6 +1,14 @@
 function ListGroup() {
-  const items = ["Harare", "Bulawayo", "Victoria Falls", "Gweru", "Mutare"];
+  let items = ["Harare", "Bulawayo", "Victoria Falls", "Gweru", "Mutare"];
+  items = [];
 
+  if (items.length === 0)
+    return (
+      <>
+        <h1>List</h1>
+          <p>No item found</p>        
+      </>
+    );
 
   return (
     <>
